@@ -16,3 +16,11 @@ mutation AddProject($name:String!, $description: String!, $status:ProjectStatus!
   }
 }
 `
+
+export const DELETE_PROJECT = gql`
+mutation DeleteProject($id: ID!){
+  deleteProject(id: $id){
+      id
+  }
+}
+`
