@@ -101,7 +101,7 @@ const AddClientModel = () => {
                       <select className="form-select" id="clientId" value={clientId} onChange={e => setClientId(e.target.value)}>
                         <option value="">Select Client</option>
                         {data.clients.map((client) => (
-                          <option key={client.id}>
+                          <option key={client.id} value={client.id}>
                             {client.name}
                           </option>
                         ))}
